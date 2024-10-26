@@ -105,6 +105,12 @@ main {
     background-color: var(--primary-color);
     padding: 0.7rem 1.4rem;
     border-radius: 0.7rem;
+    &:hover {
+      color: var(--terciary-color);
+      background-color: var(--primary-color);
+      filter: saturate(0.7);
+      transition: all 0.3s ease-in-out;
+    }
   }
 }
 .follow-me {
@@ -142,6 +148,10 @@ main {
     width: 60%;
     a {
       display: block;
+      &:hover {
+        scale: 1.3;
+        transition: all 0.3s ease-in-out;
+      }
     }
   }
 }
@@ -213,6 +223,13 @@ main {
     background-color: var(--primary-color);
     padding: 0.7rem 1.4rem;
     border-radius: 0.7rem;
+
+    &:hover {
+      color: var(--terciary-color);
+      background-color: var(--primary-color);
+      filter: saturate(0.7);
+      transition: all 0.3s ease-in-out;
+    }
   }
 }
 
@@ -341,64 +358,306 @@ main {
     gap: 1.5rem;
     width: 100%;
 
-     
     article {
       display: flex;
       flex-direction: column;
-      padding: 1.5rem 1rem;
-      border-radius: 0.5rem;
-     
+      padding: 1.5rem 1rem 1.5rem 4.5rem;
+      border-radius: 1.2rem;
+      background-repeat: no-repeat;
+      background-position: left 1rem top 25%;
+      background-size: 15%;
+      &:hover {
+        scale: 1.1;
+        transition: all 0.5s ease-in-out;
+      }
     }
-li:first-of-type article {
-  background-color: var(--color-extra1); 
-}
-li:nth-of-type(2) article {
-  background-color: var(--color-extra2);
-  p {
-    color: var(--darck-color);
-    
+    li:first-of-type article {
+      background-color: var(--color-extra1);
+      background-image: url("/static/img/bombilla.png");
+    }
   }
-  h3 {
-    color: var(--darck-color);
+  li:nth-of-type(2) article {
+    background-color: var(--color-extra2);
+    background-image: url("/static/img/businessman.png");
+    p {
+      color: var(--darck-color);
+    }
+    h3 {
+      color: var(--darck-color);
+    }
   }
-}
-li:nth-of-type(3) article {
-  background-color: var(--primary-color);
-  
-}
-li:nth-of-type(4) article {
-  background-color: var(--primary-color);
-}
-li:nth-of-type(5) article {
-  background-color: var(--color-extra1);
-}
-li:last-of-type article {
-  background-color: var(--color-extra2); 
-  p {
-    color: var(--darck-color);
-    
+  li:nth-of-type(3) article {
+    background-color: #0bceaf;
+    background-image: url("/static/img/briefcase.png");
   }
-  h3 {
-    color: var(--darck-color);
+  li:nth-of-type(4) article {
+    background-color: #0bceaf;
+    background-image: url("/static/img/windous.png");
   }
-}
+  li:nth-of-type(5) article {
+    background-color: var(--color-extra1);
+    background-image: url("/static/img/storage.png");
+  }
+  li:last-of-type article {
+    background-color: var(--color-extra2);
+    background-image: url("/static/img/crown.png");
 
+    p {
+      color: var(--darck-color);
+    }
+    h3 {
+      color: var(--darck-color);
+    }
+  }
 
-    li {
-      gap: 1.5rem;
-      border-radius: 1rem;
+  li {
+    gap: 1.5rem;
+    border-radius: 1rem;
 
-      p {
+    p {
+      color: var(--terciary-color);
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    h3 {
+      color: var(--terciary-color);
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+.portfolio {
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  align-items: start;
+  span {
+    color: var(--primary-color);
+  }
+  h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  & section p:first-of-type {
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  ul:first-of-type {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    a {
+      text-decoration: none;
+      color: var(--darck-color);
+      padding: 0.5rem 1rem;
+      &:hover {
         color: var(--terciary-color);
-        font-size: 1rem;
+        background-color: var(--primary-color);
+        border-radius: 1.5rem;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    img {
+      background-color: var(--terciary-color);
+      width: 100%;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 1rem;
+      &:hover {
+        scale: 1.1;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+.testimonials {
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  align-items: start;
+  span {
+    color: var(--primary-color);
+  }
+  h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  & section p:first-of-type {
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  div:first-of-type {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    width: 100%;
+    color: var(--secondary-color);
+
+    article:first-of-type {
+      background-image: url("/static/img/worker.png");
+      background-repeat: no-repeat;
+      background-position: top 13% left 1rem;
+      background-size: 75px;
+    }
+    article:nth-of-type(2) {
+      background-image: url("/static/img/woman.png");
+      background-repeat: no-repeat;
+      background-position: top 13% left 1rem;
+      background-size: 75px;
+    }
+    article {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      width: 50%;
+      gap: 1rem;
+      padding: 1.8rem;
+      border-radius: 1rem;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+
+      span {
+        color: var(--darck-color);
         font-weight: 500;
+        font-size: 1rem;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.54rem;
+        align-items: start;
+        margin-left: 4rem;
+        background-image: url("/static/img/quote.png");
+        background-repeat: no-repeat;
+        background-position: top 70% right 3rem;
+        background-size: 35px;
       }
 
-      h3 {
-        color: var(--terciary-color);
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin-bottom: 1.5rem;
+      p {
+        font-size: 0.8rem;
+      }
+      blockquote {
+        margin-top: 1rem;
+        width: 100%;
+        align-items: start;
+      }
+      &:hover {
+        scale: 1.05;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  .marquer {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 0.5rem;
+    height: 20px;
+    justify-content: center;
+    div {
+      height: 5px;
+      border-radius: 1rem;
+      &:hover {
+        scale: 1.1;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    div:first-of-type {
+      background-color: var(--primary-color);
+      width: 3%;
+    }
+    div:nth-of-type(2) {
+      background-color: #e1e1e1;
+      width: 2%;
+    }
+  }
+}
+.blog {
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  align-items: start;
+  span {
+    color: var(--primary-color);
+  }
+  h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: var(--secondary-color);
+    gap: 1.5rem;
+    article {
+
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border-radius: 1rem;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+
+      img {
+        width: 100%;
+        height: 50%;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+        height: 50%;
+        span{
+          color: var(--secondary-color);
+          font-weight: 500;
+          font-size: 1rem;
+          
+        }
+        .date{
+          padding: 21px ;
+          background-image: url("/static/img/calendar.png");
+          background-repeat: no-repeat;
+          background-position: top 45% left ;
+          background-size: 20px;
+        }
+        .comments{
+          padding: 23px ;
+          background-image: url("/static/img/comments.png");
+          background-repeat: no-repeat;
+          background-position: top 40% left ;
+          background-size: 25px;
+        }
+        a{
+          color: var(--primary-color);
+          font-weight: 500;
+          font-size: 1rem;
+          text-decoration: none;
+        }
       }
     }
   }
