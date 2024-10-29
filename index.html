@@ -12,20 +12,51 @@
       <h1>Arsh<span>ia</span></h1>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Clients</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about ">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Clients</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
+<aside id="dark-mode">
+  <a href="#"><img src="static/img/media-luna.png" alt=" Luna"></a>
+</aside>
+
+
+    <aside class="follow-me">
+      <p>Follow Me</p>
+      <hr />
+      <div>
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="static/img/Facebook.svg" alt="Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="static/img/Twitter.svg" alt="Twitter" /></a>
+          </li>
+          <li>
+            <a href="#"><img src=" static/img/Github.svg" alt="Github" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src=" static/img/Linkedin.svg" alt="Linkedin"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+
     <main>
       <!-- Hero Section -->
-      <section class="hero">
+      <section id="hero" class="hero">
         <div>
           <h2>I'M <span>Jessy Doe</span></h2>
           <p><span> A</span> UI Designer.</p>
@@ -39,33 +70,8 @@
         <img src="static/img/hero.png" alt="Jessy Doe's Profile Picture" />
       </section>
 
-      <aside class="follow-me">
-        <p>Follow Me</p>
-        <hr />
-        <div>
-          <ul>
-            <li>
-              <a href="#"
-                ><img src="static/img/Facebook.svg" alt="Facebook"
-              /></a>
-            </li>
-            <li>
-              <a href="#"><img src="static/img/Twitter.svg" alt="Twitter" /></a>
-            </li>
-            <li>
-              <a href="#"><img src=" static/img/Github.svg" alt="Github" /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src=" static/img/Linkedin.svg" alt="Linkedin"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </aside>
-
       <!-- About Me Section -->
-      <section class="about-me">
+      <section id="about" class="about-me">
         <img src="static/img/office.png" alt="Jessy Doe's Profile Picture" />
         <article>
           <h2>About Me</h2>
@@ -146,7 +152,7 @@
       </section>
 
       <!-- Services Section -->
-      <section class="services">
+      <section id="services" class="services">
         <p>get support for the services</p>
         <h2>My Services</h2>
         <ul>
@@ -213,7 +219,7 @@
       </section>
 
       <!-- Portfolio Section -->
-      <section class="portfolio">
+      <section id="portfolio" class="portfolio">
         <p>Awesome Works and enjoy</p>
         <h2>My Portfolio</h2>
 
@@ -248,7 +254,7 @@
       </section>
 
       <!-- Testimonials Section -->
-      <section class="testimonials">
+      <section id="testimonials" class="testimonials">
         <p>What clients think about me</p>
         <h2>Clients Say</h2>
         <div>
@@ -284,17 +290,20 @@
       </section>
 
       <!-- Blog Section -->
-      <section class="blog">
+      <section id="blog" class="blog">
         <p>Check out my blog Post</p>
         <h2>Latest Blog</h2>
         <div>
           <article>
             <img src="static/img/coffe-blue.png" alt="" />
             <div>
-              <p><span class="date">June 20, 2020</span> <span class="comments">5</span></p>
+              <p>
+                <span class="date">June 20, 2020</span>
+                <span class="comments">5</span>
+              </p>
 
               <h3>Be Your Best Version</h3>
-              
+
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -305,7 +314,10 @@
           <article>
             <img src="static/img/clock.png" alt="" />
             <div>
-              <p><span class="date">June 18, 2020 </span><span class="comments">3</span></p>
+              <p>
+                <span class="date">June 18, 2020 </span
+                ><span class="comments">3</span>
+              </p>
               <h3>5 Tips in UI/UX Web Design</h3>
 
               <p>
@@ -318,7 +330,10 @@
           <article>
             <img src="static/img/vino.png" alt="" />
             <div>
-              <p><span class="date">June 12, 2020</span> <span class="comments">8</span></p>
+              <p>
+                <span class="date">June 12, 2020</span>
+                <span class="comments">8</span>
+              </p>
               <h3>Inspire Your Dreams</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do
@@ -331,38 +346,33 @@
       </section>
 
       <!-- Contact Section -->
-      <section class="contact">
+      <section id="contact" class="contact">
         <p>Feel free to contact me any time</p>
         <h2>Get in Touch</h2>
         <img src="static/img/map.png" alt="map.png" />
-        <section class="contact-info">
-          <img src="" alt="" />
-          <h2>Call Us On</h2>
-          <p>+123 456 7890</p>
-        </section>
-        <section class="office">
-          <img src="" alt="" />
-          <h2>Visit Office</h2>
-          <p>24 Street, New York, USA</p>
-        </section>
-        <section class="email" º>
-          <img src="" alt="" />
-          <h2>Email Us At</h2>
-          <p>sample@uone.com</p>
-        </section>
-        <section class="form">
-          <form action="#" method="POST">
-            <label for="name">Your Name:</label>
-            <input type="text" class="name" name="name" />
+        <ul>
+          <li>
+            <h3>Call Us On</h3>
+            <p>+123 456 7890</p>
+          </li>
+          <li>
+            <h3>Visit Office</h3>
+            <p>24 Street, New York, USA</p>
+          </li>
+          <li>
+            <h3>Email Us At</h3>
+            <p>sample@uone.com</p>
+          </li>
+        </ul>
+        <section >
+          <form>
+            <input type="text" class="name" name="name" required placeholder="Your Name*" />
 
-            <label for="email">Your Email:</label>
-            <input type="email" class="email" name="email" />
+            <input type="email" class="email" name="email" required placeholder="Your Email*" />
 
-            <label for="subject">Your Subject:</label>
-            <input type="text" class="subject" name="subject" />
+            <input type="text" class="subject" name="subject" required placeholder="Your Subject*" />
 
-            <label for="message">Your Message:</label>
-            <textarea class="message" name="message"></textarea>
+            <textarea class="message" name="message" placeholder="Your Message..."rows="9" ></textarea>
 
             <button type="submit">Send Message</button>
           </form>
