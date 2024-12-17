@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <h1>Arsh<span>ia</span></h1>
+      <img src="static/img/logo.png" alt="Logo" />
       <nav>
         <ul>
           <li><a href="#hero">Home</a></li>
@@ -21,12 +21,12 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+    
     </header>
 
-<aside id="dark-mode">
-  <a href="#"><img src="static/img/media-luna.png" alt=" Luna"></a>
-</aside>
-
+    <aside id="dark-mode">
+      <a href="#"><img src="static/img/media-luna.png" alt="Luna" /></a>
+    </aside>
 
     <aside class="follow-me">
       <p>Follow Me</p>
@@ -34,9 +34,7 @@
       <div>
         <ul>
           <li>
-            <a href="#"
-              ><img src="static/img/Facebook.svg" alt="Facebook"
-            /></a>
+            <a href="#"><img src="static/img/Facebook.svg" alt="Facebook" /></a>
           </li>
           <li>
             <a href="#"><img src="static/img/Twitter.svg" alt="Twitter" /></a>
@@ -52,7 +50,6 @@
         </ul>
       </div>
     </aside>
-
 
     <main>
       <!-- Hero Section -->
@@ -260,7 +257,7 @@
         <div>
           <article>
             <div>
-              <p><span>John Doe,</span></p>
+              <h3><span>John Doe,</span></h3>
               <p>CEO Management</p>
             </div>
             <blockquote>
@@ -272,7 +269,7 @@
           </article>
           <article>
             <div>
-              <p><span>Mary Jane, </span></p>
+              <h3><span>Mary Jane, </span></h3>
               <p>Marketing Head</p>
             </div>
             <blockquote>
@@ -364,24 +361,50 @@
             <p>sample@uone.com</p>
           </li>
         </ul>
-        <section >
-          <form>
-            <input type="text" class="name" name="name" required placeholder="Your Name*" />
+        <div>  
+        <form>
+            <input
+              type="text"
+              class="name"
+              name="name"
+              required
+              placeholder="Your Name*"
+            />
 
-            <input type="email" class="email" name="email" required placeholder="Your Email*" />
+            <input
+              type="email"
+              class="email"
+              name="email"
+              required
+              placeholder="Your Email*"
+            />
 
-            <input type="text" class="subject" name="subject" required placeholder="Your Subject*" />
+            <input
+              type="text"
+              class="subject"
+              name="subject"
+              required
+              placeholder="Your Subject*"
+            />
 
-            <textarea class="message" name="message" placeholder="Your Message..."rows="9" ></textarea>
+            <textarea
+              class="message"
+              name="message"
+              placeholder="Your Message..."
+              rows="9"
+            ></textarea>
 
             <button type="submit">Send Message</button>
           </form>
-        </section>
-      </section>
+          </div>
     </main>
 
     <footer>
       <p>&copy; 2024 Jessy Doe. All Rights Reserved.</p>
     </footer>
+    <audio autoplay>
+      <source src="static/audio/lofi.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
   </body>
 </html>
