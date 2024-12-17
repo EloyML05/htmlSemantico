@@ -100,6 +100,7 @@ main {
   @media screen and (width <= 1100px) {
     flex-direction: column-reverse;
     align-items: center;
+    margin: 100px 0;
   }
 
   div {
@@ -111,6 +112,7 @@ main {
     align-items: start;
 
     @media screen and (width <= 1100px) {
+      margin-top: 0;
       width: 100%;
       align-items: center;
 
@@ -124,6 +126,14 @@ main {
 
   img {
     width: 50%;
+
+    @media screen and (width <= 1100px) {
+      width: 60%;
+    }
+
+    @media screen and (width <= 780px) {
+      width: 90%;
+    }
   }
 
   span {
