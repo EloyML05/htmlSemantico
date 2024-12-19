@@ -62,6 +62,37 @@ header {
     font-size: 1.3rem;
     font-weight: 500;
   }
+
+  nav:first-of-type {
+    @media screen and (width <= 1100px) {
+      display: none;
+    }
+  }
+
+  nav:last-of-type {
+    display: none;
+
+    a {
+      color: var(--dark-color);
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 1.2rem;
+      padding: 0.5rem 1rem;
+      border: 2px solid transparent;
+        border-radius: 50%;
+
+      &:hover {
+        color: var(--primary-color);
+        border: 2px solid var(--primary-color);
+        border-radius: 0.5rem;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    @media screen and (width <= 1100px) {
+      display: block;
+    }
+  }
 }
 
 main {
@@ -1047,7 +1078,7 @@ main {
         background-size: 30px;
 
         @media screen and (width <= 780px) {
-          background-position: top 30% left 32%; ;
+          background-position: top 30% left 32%;
         }
       }
 
@@ -1058,7 +1089,7 @@ main {
         background-size: 30px;
 
         @media screen and (width <= 780px) {
-          background-position: top 30% left 32%; ;
+          background-position: top 30% left 32%;
         }
       }
 
@@ -1069,11 +1100,9 @@ main {
         background-size: 30px;
 
         @media screen and (width <= 780px) {
-          background-position: top 30% left 32%; ;
+          background-position: top 30% left 32%;
         }
       }
-
-      
     }
   }
 
@@ -1141,32 +1170,29 @@ main {
           width: 100%;
         }
       }
+    }
+
+    button {
+      width: 15%;
+      padding: 0.7rem 0.5rem;
+      border: 0;
+      border-radius: 1rem;
+      background-color: var(--primary-color);
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+
+      &:hover {
+        filter: saturate(0.7);
+        transition: all 0.3s ease-in-out;
       }
 
-      button {
-        width: 15%;
-        padding: 0.7rem 0.5rem;
-        border: 0;
-        border-radius: 1rem;
-        background-color: var(--primary-color);
-        color: white;
-        font-weight: 600;
-        cursor: pointer;
-
-        &:hover {
-          filter: saturate(0.7);
-          transition: all 0.3s ease-in-out;
-        }
-
-        @media screen and (width <= 1100px) {
-          width: 40%;
-          
-        }
-      }
+      @media screen and (width <= 1100px) {
+        width: 40%;
       }
     }
-  
-
+  }
+}
 
 footer {
   text-align: center;
