@@ -573,13 +573,13 @@ main {
 
     li:first-of-type article {
       background-color: var(--color-extra1);
-      background-image: url("static/img/bombilla.png");
+      background-image: url("../img/bombilla.png");
     }
   }
 
   li:nth-of-type(2) article {
     background-color: var(--color-extra2);
-    background-image: url("static/img/businessman.png");
+    background-image: url("../img/businessman.png");
 
     p {
       color: var(--darck-color);
@@ -592,22 +592,22 @@ main {
 
   li:nth-of-type(3) article {
     background-color: #0bceaf;
-    background-image: url("static/img/briefcase.png");
+    background-image: url("../img/briefcase.png");
   }
 
   li:nth-of-type(4) article {
     background-color: #0bceaf;
-    background-image: url("static/img/windous.png");
+    background-image: url("../img/windous.png");
   }
 
   li:nth-of-type(5) article {
     background-color: var(--color-extra1);
-    background-image: url("static/img/storage.png");
+    background-image: url("../img/storage.png");
   }
 
   li:last-of-type article {
     background-color: var(--color-extra2);
-    background-image: url("static/img/crown.png");
+    background-image: url("../img/crown.png");
 
     p {
       color: var(--darck-color);
@@ -773,14 +773,14 @@ main {
     }
 
     article:first-of-type {
-      background-image: url("static/img/worker.png");
+      background-image: url("../img/worker.png");
       background-repeat: no-repeat;
       background-position: top 13% left 1rem;
       background-size: 75px;
     }
 
     article:nth-of-type(2) {
-      background-image: url("static/img/woman.png");
+      background-image: url("../img/woman.png");
       background-repeat: no-repeat;
       background-position: top 13% left 1rem;
       background-size: 75px;
@@ -812,7 +812,7 @@ main {
         gap: 0.54rem;
         align-items: start;
         margin-left: 4rem;
-        background-image: url("static/img/quote.png");
+        background-image: url("../img/quote.png");
         background-repeat: no-repeat;
         background-position: top 70% right 3rem;
         background-size: 35px;
@@ -959,7 +959,7 @@ main {
 
         .date {
           padding: 21px;
-          background-image: url("static/img/calendar.png");
+          background-image: url("../img/calendar.png");
           background-repeat: no-repeat;
           background-position: top 45% left;
           background-size: 20px;
@@ -967,7 +967,7 @@ main {
 
         .comments {
           padding: 23px;
-          background-image: url("static/img/comments.png");
+          background-image: url("../img/comments.png");
           background-repeat: no-repeat;
           background-position: top 40% left;
           background-size: 25px;
@@ -1072,7 +1072,7 @@ main {
       }
 
       &:first-of-type {
-        background-image: url("static/img/phone.png");
+        background-image: url("../img/phone.png");
         background-repeat: no-repeat;
         background-position: top 5% left;
         background-size: 30px;
@@ -1083,7 +1083,7 @@ main {
       }
 
       &:nth-of-type(2) {
-        background-image: url("static/img/pointer.png");
+        background-image: url("../img/pointer.png");
         background-repeat: no-repeat;
         background-position: top 5% left;
         background-size: 30px;
@@ -1094,7 +1094,7 @@ main {
       }
 
       &:last-of-type {
-        background-image: url("static/img/mensage.png");
+        background-image: url("../img/mensage.png");
         background-repeat: no-repeat;
         background-position: top 15% left;
         background-size: 30px;
